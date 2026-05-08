@@ -12,4 +12,4 @@ nav:
       - 開発ツールの準備: dev-tools.md
       - リポジトリの取得: repository.md
       - 動作確認: verification.md
-
+  - エラー集: troubleshooting.md
