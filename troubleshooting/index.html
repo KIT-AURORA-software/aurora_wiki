@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../wsl-install/">
+        <link rel="prev" href="../verification/">
       
-      
-        <link rel="next" href="../repository/">
       
       
         
@@ -23,7 +21,7 @@
     
     
       
-        <title>開発ツールの準備 - KIT-AURORA Wiki</title>
+        <title>エラー集 - KIT-AURORA Wiki</title>
       
     
     
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              開発ツールの準備
+              エラー集
             
           </span>
         </div>
@@ -220,20 +218,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -254,7 +250,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -353,37 +349,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    開発ツールの準備
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../dev-tools/" class="md-nav__link">
         
   
   
@@ -399,59 +368,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        インストールするもの
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vs-code-wsl" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        VS Code の WSL 拡張機能
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wsl-vs-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        WSL 上で VS Code を開く
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -524,10 +440,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../troubleshooting/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    エラー集
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -543,6 +486,275 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        書き方
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        公開前の注意
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MkDocs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MkDocs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mkdocs コマンドが見つからない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        症状
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        対応
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        git コマンドが見つからない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        症状
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        対応
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permission-denied-publickey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permission denied (publickey) が出る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        症状
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        対応
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WSL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WSL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsl_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        wsl コマンドが見つからない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        症状
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        対応
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -577,7 +789,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        インストールするもの
+        書き方
       
     </span>
   </a>
@@ -585,10 +797,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#vs-code-wsl" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        VS Code の WSL 拡張機能
+        公開前の注意
       
     </span>
   </a>
@@ -596,13 +808,229 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#wsl-vs-code" class="md-nav__link">
+  <a href="#mkdocs" class="md-nav__link">
     <span class="md-ellipsis">
       
-        WSL 上で VS Code を開く
+        MkDocs
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="MkDocs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        mkdocs コマンドが見つからない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        症状
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        対応
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Git">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        git コマンドが見つからない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        症状
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        対応
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permission-denied-publickey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permission denied (publickey) が出る
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        症状
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        対応
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wsl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WSL
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WSL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wsl_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        wsl コマンドが見つからない
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        症状
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原因
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        対応
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -623,22 +1051,102 @@
 
 
 
-<h1 id="_1">開発ツールの準備</h1>
-<p>Aurora の開発に必要なツールを準備します。</p>
-<h2 id="_2">インストールするもの</h2>
-<ul>
-<li>VS Code</li>
-<li>Git</li>
-<li>WSL 拡張機能</li>
-<li>Docker Desktop</li>
-<li>プロジェクトで必要な言語ランタイム</li>
-</ul>
-<h2 id="vs-code-wsl">VS Code の WSL 拡張機能</h2>
-<p>VS Code の Extensions から <code>WSL</code> を検索してインストールします。</p>
-<h2 id="wsl-vs-code">WSL 上で VS Code を開く</h2>
-<pre><code class="language-bash">code .
+<h1 id="_1">エラー集</h1>
+<p>Aurora の開発中に発生したエラーと、その対応方法をまとめます。<br />
+同じ問題で迷わないように、原因と解決手順を残していきます。</p>
+<h2 id="_2">書き方</h2>
+<p>エラーを追加するときは、以下の形で書いてください。</p>
+<pre><code class="language-md">## エラー名または症状
+
+### 症状
+
+どのタイミングで、どのようなエラーが出たかを書く。
+
+### 原因
+
+分かっている範囲で原因を書く。
+
+### 対応
+
+解決に使ったコマンドや手順を書く。
+
+### 補足
+
+関連リンクや注意点があれば書く。
 </code></pre>
-<p>このコマンドで VS Code が開けば、WSL と VS Code の連携はできています。</p>
+<h2 id="_3">公開前の注意</h2>
+<p>エラー文を貼る前に、以下の情報が含まれていないか確認してください。</p>
+<ul>
+<li>パスワード</li>
+<li>API キー</li>
+<li>GitHub token</li>
+<li>SSH 秘密鍵</li>
+<li>個人のメールアドレス</li>
+<li>学内・内部向けの URL</li>
+<li>ローカルPCのユーザー名</li>
+<li>公開していないサーバー名や IP アドレス</li>
+</ul>
+<p>必要な場合は、以下のように置き換えてから記録します。</p>
+<pre><code class="language-text">C:\Users\your-name\project
+https://example.internal.local
+192.168.xxx.xxx
+</code></pre>
+<h2 id="mkdocs">MkDocs</h2>
+<h3 id="mkdocs_1"><code>mkdocs</code> コマンドが見つからない</h3>
+<h3 id="_4">症状</h3>
+<pre><code class="language-text">mkdocs: command not found
+</code></pre>
+<p>または</p>
+<pre><code class="language-text">'mkdocs' is not recognized as an internal or external command
+</code></pre>
+<h3 id="_5">原因</h3>
+<p>MkDocs がインストールされていない、または PATH が通っていない可能性があります。</p>
+<h3 id="_6">対応</h3>
+<p>MkDocs をインストールします。</p>
+<pre><code class="language-bash">pip install mkdocs mkdocs-material
+</code></pre>
+<p>インストール後、バージョンを確認します。</p>
+<pre><code class="language-bash">mkdocs --version
+</code></pre>
+<h2 id="git">Git</h2>
+<h3 id="git_1"><code>git</code> コマンドが見つからない</h3>
+<h3 id="_7">症状</h3>
+<pre><code class="language-text">git: command not found
+</code></pre>
+<p>または</p>
+<pre><code class="language-text">'git' is not recognized as an internal or external command
+</code></pre>
+<h3 id="_8">原因</h3>
+<p>Git がインストールされていない、または PATH が通っていない可能性があります。</p>
+<h3 id="_9">対応</h3>
+<p><a href="https://gitforwindows.org/">Git for Windows</a> から Git をインストールします。<br />
+インストール後、以下のコマンドで確認します。</p>
+<pre><code class="language-bash">git --version
+</code></pre>
+<h3 id="permission-denied-publickey"><code>Permission denied (publickey)</code> が出る</h3>
+<h3 id="_10">症状</h3>
+<pre><code class="language-text">Permission denied (publickey).
+</code></pre>
+<h3 id="_11">原因</h3>
+<p>GitHub に SSH キーが登録されていない、または違う SSH キーを使っている可能性があります。</p>
+<h3 id="_12">対応</h3>
+<p>SSH 接続を確認します。</p>
+<pre><code class="language-bash">ssh -T git@github.com
+</code></pre>
+<p>SSH キーの作成と登録は、<a href="../github-setup/">GitHub のセットアップ</a> を確認してください。</p>
+<h2 id="wsl">WSL</h2>
+<h3 id="wsl_1"><code>wsl</code> コマンドが見つからない</h3>
+<h3 id="_13">症状</h3>
+<pre><code class="language-text">wsl: command not found
+</code></pre>
+<p>または、PowerShell で WSL が起動できない。</p>
+<h3 id="_14">原因</h3>
+<p>WSL がインストールされていない可能性があります。</p>
+<h3 id="_15">対応</h3>
+<p>PowerShell を管理者として開き、以下を実行します。</p>
+<pre><code class="language-powershell">wsl --install
+</code></pre>
+<p>詳しくは <a href="../wsl-install/">WSL のインストール</a> を確認してください。</p>
 
 
 
