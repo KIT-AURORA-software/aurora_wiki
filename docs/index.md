@@ -126,9 +126,6 @@ git commit -m "update setup page "
 git push origin main
 ```
 
-
-
-
 ## 今後追加したいページ
 
 - `setup.md`: ローカル環境構築

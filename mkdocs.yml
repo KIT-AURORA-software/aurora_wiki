@@ -1,9 +1,15 @@
 site_name: KIT-AURORA Wiki
 
-theme: 
+theme:
   name: material
 
 nav:
   - Home: index.md
-  - 環境構築: setup.md
+  - 環境構築:
+      - 概要: setup.md
+      - GitHub のセットアップ: github-setup.md
+      - WSL のインストール: wsl-install.md
+      - 開発ツールの準備: dev-tools.md
+      - リポジトリの取得: repository.md
+      - 動作確認: verification.md
 
