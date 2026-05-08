@@ -1,1 +1,10 @@
-site_name: My Docs
+site_name: KIT-AURORA Wiki
+
+theme: 
+  name: material
+
+nav:
+  - Home: index.md
+  - Setup:
+      - 環境構築 setup.md
+

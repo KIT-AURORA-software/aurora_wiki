@@ -1,17 +1,125 @@
-# Welcome to MkDocs
+﻿# Aurora 開発 Wiki
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Aurora の開発に必要な情報を集約するための Wiki です。  
+環境構築、開発ルール、設計メモ、運用手順、トラブルシュートをここから参照できるようにします。
 
-## Commands
+## 目的
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+- 新しく参加したメンバーが開発を始めやすくする
+- 仕様や設計判断の背景を残す
+- 開発中に迷いやすい手順を共通化する
+- 障害対応や調査の知見を再利用できる形で蓄積する
 
-## Project layout
+## はじめに
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+まずは以下の順番で確認してください。
+
+1. リポジトリを取得する
+2. 必要なツールと依存関係をインストールする
+3. ローカル環境を起動する
+4. テストとビルドが通ることを確認する
+5. 開発ルールとブランチ運用を確認する
+
+詳細な手順は、今後 `setup.md` にまとめます。
+
+## 開発環境
+
+| 項目 | 内容 |
+| --- | --- |
+| 対象プロジェクト | Aurora |
+| ドキュメント管理 | Markdown |
+| Wiki ルート | `docs/` |
+| 推奨エディタ | VS Code など |
+
+環境依存の設定やバージョン固定がある場合は、このセクションでは概要だけを書き、詳しい手順は専用ページに分けます。
+
+## ディレクトリ構成
+
+```text
+docs/
+  index.md        # Wiki トップページ
+  setup.md        # 環境構築手順
+  architecture.md # 設計・構成メモ
+  workflow.md     # 開発フロー
+  troubleshooting.md
+```
+
+まだ存在しないページは、必要になったタイミングで追加します。
+
+## 開発フロー
+
+基本的な流れは以下です。
+
+1. Issue または作業メモで目的を確認する
+2. 作業用ブランチを作成する
+3. 実装・ドキュメント更新を行う
+4. テスト、ビルド、Lint を実行する
+5. Pull Request を作成する
+6. レビュー後にマージする
+
+ブランチ名やコミットメッセージの形式は、チームで決まり次第 `workflow.md` に追記します。
+
+## ドキュメント作成ルール
+
+- 1ページにつき1テーマを扱う
+- 手順は再現できる粒度で書く
+- コマンドはコードブロックで記載する
+- 判断の背景や理由も残す
+- 古くなった情報を見つけたら、その場で更新する
+
+例:
+
+```powershell
+npm install
+npm run dev
+```
+
+## 設計メモ
+
+設計に関する情報は、以下の観点で整理します。
+
+- 全体アーキテクチャ
+- データモデル
+- API 設計
+- 画面構成
+- 認証・認可
+- 外部サービス連携
+- 例外処理とログ
+
+大きな意思決定は、結論だけでなく「なぜそうしたか」も残します。
+
+## トラブルシュート
+
+よくある問題は `troubleshooting.md` に集約します。
+
+記録するときは、以下の形にすると後から探しやすくなります。
+
+```md
+### 問題名
+
+症状:
+
+原因:
+
+対応:
+
+関連リンク:
+```
+
+## 今後追加したいページ
+
+- `setup.md`: ローカル環境構築
+- `workflow.md`: ブランチ運用、PR、レビュー方針
+- `architecture.md`: システム構成と設計方針
+- `commands.md`: よく使うコマンド集
+- `troubleshooting.md`: エラー対応集
+- `release.md`: リリース手順
+- `glossary.md`: 用語集
+
+## 更新メモ
+
+| 日付 | 内容 |
+| --- | --- |
+| 2026-05-08 | Aurora 開発 Wiki のトップページを作成 |
+
+
