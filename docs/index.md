@@ -114,7 +114,7 @@ npm run dev
 git clone https://github.com/KIT-AURORA-software/aurora_wiki.git
 cd aurora_wiki
 ```
-他の人が編集したものを反映させる
+他の人が編集したものを反映させる.
 ```
 git pull origin main
 ```
