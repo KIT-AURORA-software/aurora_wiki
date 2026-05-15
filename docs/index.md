@@ -109,10 +109,16 @@ npm run dev
 
 ## 開発Wiki使用方法
 ### 編集の流れ
+※初回はレポジトリをクローンする。二回目以降は次の作業は飛ばして良い。
 ```
 git clone https://github.com/KIT-AURORA-software/aurora_wiki.git
 cd aurora_wiki
 ```
+他の人が編集したものを反映させる
+```
+git pull origin main
+```
+
 Markdownを編集
 ```
 docs/setup.md
@@ -120,7 +126,11 @@ docs/nav2.md
 docs/docker.md
 ```
 などエラーの原因などを共有したい場合に書きましょう。<br>
-編集後 :
+編集後、ローカルで表示に問題がないか確認する。
+```
+mkdocs build --strict
+```
+問題がない場合はcommitしてpushする。
 ```
 git add .
 git commit -m "update setup page "
