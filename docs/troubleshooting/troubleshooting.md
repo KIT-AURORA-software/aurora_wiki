@@ -131,7 +131,7 @@ SSH 接続を確認します。
 ssh -T git@github.com
 ```
 
-SSH キーの作成と登録は、[GitHub のセットアップ](github-setup.md) を確認してください。
+SSH キーの作成と登録は、[GitHub のセットアップ](../setup/github-setup.md) を確認してください。
 
 ## WSL
 
@@ -157,5 +157,4 @@ PowerShell を管理者として開き、以下を実行します。
 wsl --install
 ```
 
-詳しくは [WSL のインストール](wsl-install.md) を確認してください。
-
+詳しくは [WSL のセットアップ](../setup/wsl-setup.md) を確認してください。

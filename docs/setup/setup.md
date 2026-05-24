@@ -6,7 +6,7 @@ Aurora の開発を始めるために必要なセットアップ手順をまと�
 ## セットアップ手順
 
 1. [GitHub のセットアップ](github-setup.md)
-2. [WSL のインストール](wsl-install.md)
+2. [WSL のセットアップ](wsl-setup.md)
 3. [開発ツールの準備](dev-tools.md)
 4. [リポジトリの取得](repository.md)
 5. [動作確認](verification.md)
@@ -46,4 +46,3 @@ Aurora リポジトリを clone
 - 解決したら手順を Wiki に追記する
 
 よくある問題は、今後 `troubleshooting.md` にまとめます。
-

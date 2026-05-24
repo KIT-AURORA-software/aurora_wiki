@@ -6,10 +6,11 @@ theme:
 nav:
   - Home: index.md
   - 環境構築:
-      - 概要: setup.md
-      - GitHub のセットアップ: github-setup.md
-      - WSL のインストール: wsl-install.md
-      - 開発ツールの準備: dev-tools.md
-      - リポジトリの取得: repository.md
-      - 動作確認: verification.md
-  - エラー集: troubleshooting.md
+      - 概要: setup/setup.md
+      - GitHub のセットアップ: setup/github-setup.md
+      - WSL のインストール: setup/wsl-setup.md
+      - VS Code のインストール: setup/vscode-install.md
+      - 開発ツールの準備: setup/dev-tools.md
+      - リポジトリの取得: setup/repository.md
+      - 動作確認: setup/verification.md
+  - エラー集: troubleshooting/troubleshooting.md
