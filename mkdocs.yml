@@ -8,9 +8,11 @@ nav:
   - 環境構築:
       - 概要: setup/setup.md
       - GitHub のセットアップ: setup/github-setup.md
-      - WSL のインストール: setup/wsl-setup.md
-      - VS Code のインストール: setup/vscode-install.md
+      - WSL のセットアップ: setup/wsl-setup.md
+      - VS Code のセットアップ: setup/vscode-setup.md
       - 開発ツールの準備: setup/dev-tools.md
       - リポジトリの取得: setup/repository.md
       - 動作確認: setup/verification.md
+      - Docker のセットアップ: setup/docker-setup.md
+      - Docker の使い方: setup/docker-usage.md
   - エラー集: troubleshooting/troubleshooting.md
