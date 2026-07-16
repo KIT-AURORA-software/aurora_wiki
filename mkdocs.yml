@@ -19,3 +19,5 @@ nav:
   - 知っとくと便利: 
     - Linux の情報: valuable_information/linux_information.md
     - RTK-GNSSの情報: valuable_information/rtk_gnss.md
+    - CPUとGPU: valuable_information/cpu_gpu.md
+    - プロセスとスレッド: valuable_information/process_thread.md
