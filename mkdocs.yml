@@ -15,6 +15,8 @@ nav:
       - 動作確認: setup/verification.md
       - Docker のセットアップ: setup/docker-setup.md
       - Docker の使い方: setup/docker-usage.md
+  - Github:
+      - Githubの使い方: github/using.md
   - エラー集: troubleshooting/troubleshooting.md
   - 知っとくと便利: 
     - Linux の情報: valuable_information/linux_information.md
