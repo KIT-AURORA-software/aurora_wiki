@@ -18,15 +18,65 @@ GitHubへプッシュ
 ```
 
 ---
+## 2.最初の設定
 
-## 2.人が上げたレポジトリを使用したいとき
-すでにGitHub上にあるレポジトリを取得する場合は`clone`を使用する。
-
-HTTPSの場合は次のようにする。
+1. まずSSH鍵があるか確認する。
 ```bash
-git clone https://github.com/ユーザー名/レポジトリ名.git
+ls ~/.ssh
 ```
-SSHの場合は次のようにする。
+
+2. 鍵がなければ作成する
+```bash
+ssh-keygan -t ed25519 -C "自分のGihtubメールアドレス"
+```
+基本はEnter連打でも大丈夫です。
+
+3. 公開鍵を表示する。
+```bash
+cat ~/.ssh/id_ed25519.pub
+```
+表示された
+```
+ssh-ed25519 AAAA.....
+```
+をコピーする。
+4. GitHubで効果鍵を登録する。
+GitHubの
+```
+Settings
+→ SSH and GPG keys
+→ New SSH key
+```
+から、先ほどコピーした公開鍵を登録する
+5. SSH接続を確認する。
+```bash
+ssh -T git@github.com
+```
+初回は、
+```
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+と出るので、
+```
+yes
+```
+と入力する。
+
+成功すると、だいたい
+```
+Hi ユーザー名! You've successfully ...
+```
+と表示される。
+
+## 3.各班のレポジトリをクローンする
+1.ワーキングスペースを作成する。
+```bash
+mkdir -p ~/ワーキングスペース名/src
+cd ~/ワーキングスペース名/src
+```
+GitHub上にある各班のレポジトリを取得する。<br>
+レポジトリはsrcの下にクローンする
+SSHの場合次のようにする。
 ```bash
 git clone git@github.com:ユーザー名/レポジトリ名/git
 ```
@@ -35,10 +85,15 @@ git clone git@github.com:ユーザー名/レポジトリ名/git
 ```bash
 cd レポジトリ名
 ```
+
+※HTTPSクローンの場合は次のようにする。<br>
+```bash
+git clone https://github.com/ユーザー名/レポジトリ名.git
+```
 ---
 
-## 3.新しいレポジトリを作成する方法
-### 3.1 GitHub側でレポジトリを作成する
+## 4.新しいレポジトリを作成する方法
+### 4.1 GitHub側でレポジトリを作成する
 
 Github上で次の操作を行う。
 
@@ -49,7 +104,7 @@ Github上で次の操作を行う。
 5. 「Creeate repository」を選択する。
 
 
-### 3.2 既存のフォルダをGit管理する
+### 4.2 既存のフォルダをGit管理する
 1. プロジェクトのフォルダへ移動する。
 
 ```bash
@@ -80,7 +135,7 @@ git remote add origin https://guthub.com/ユーザー名/レポジトリ名.git
 git push origin main
 ```
 
-## 4.GitHubに上げたレポジトリを修正するとき
+## 5.GitHubに上げたレポジトリを修正するとき
 1. GitHub上の最新変更を取得する。
 ```bash
 git pull 
@@ -99,7 +154,7 @@ git commit -m "例）修正しました"
 git push origin main 
 ```
 
-## 5. ブランチの使い方
+## 6. ブランチの使い方
 ブランチは、メインのコードに影響を与えずに別の作業を進めるための機能のこと。自分の環境を作りたいときにおすすめ
 
 1. レポジトリのフォルダに移動
@@ -127,3 +182,26 @@ git switch ブランチ名
 ```bash
 git push -u origin 作成したブランチ名
 ```
+
+## 7. 編集方法
+1. 自分のPCをgithubに上がっている最新情報に直す
+```bash
+git pull
+```
+2. 編集したフォルダやファイルを追加する
+```bash
+git add .
+```
+基本的には上のコードで良いが、特定のファイルだけを上げたいときはそのファイルの相対パスをかく
+```bash
+git add ファイルの相対パス
+```
+3. githubに何処を編集したのかというコミットを打つ
+```bash
+git commit -m "編集内容"
+```
+4. pushを行う
+```bash
+git push origin main
+```
+5. Webのgithubに移動して自分が上げたファイルが入っているか確認する。
