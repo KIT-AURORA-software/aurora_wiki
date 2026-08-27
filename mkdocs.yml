@@ -15,6 +15,7 @@ nav:
       - 動作確認: setup/verification.md
       - Docker のセットアップ: setup/docker-setup.md
       - Docker の使い方: setup/docker-usage.md
+      - PyQt のセットアップ: setup/pyqt.md
   - Github:
       - Githubの使い方: github/using.md
   - エラー集: troubleshooting/troubleshooting.md
