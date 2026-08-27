@@ -1,22 +1,22 @@
 # PyQtのセットアップ
 
-1. ワークスペースの作成
+## 1. ワークスペースの作成
 ```bash
 mkdir science_gui
 cd science_gui
 ```
 
-2. 仮想環境の作成
+## 2. 仮想環境の作成
 ```bash
 python3 -m venv .venv
 ```
 
-3. 仮想環境の有効化
+## 3. 仮想環境の有効化
 ```bash
 source .venv/bin/activate
 ```
 
-4. ライブラリのインストール
+## 4. ライブラリのインストール
 ```bash
 python -V
 ```
@@ -26,7 +26,7 @@ python -m pip install --upgrade pip
 pip install PyQt5
 ```
 
-5. xcb関係ライブラリのインストール
+## 5. xcb関係ライブラリのインストール
 ```bash
 sudo apt update
 
@@ -42,4 +42,4 @@ sudo apt install -y \
 
 ```
 
-6. VSCodeに行ってコードの作成をしてください
+## 6. VSCodeに行ってコードの作成をしてください
